@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>COVID Tail - About</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="review.js"></script>
+
+    <script src="base.js"></script>
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="review.css">
+</head>
+<body>
+<div class="headpage"></div>
+
+<div class="mainbody">
+    <div id="content">
+        <h1>About</h1>
+        <h3>COVID Tail is a tool to track COVID-19 cases.</h3>
+    </div>
+    <div id="contactwrapper">
+        <div id="contact">
+            <h4>Review your feedback</h4>
+            <form id="review-form" method="get" action="formService.php">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name" name="name" required="required">
+                    <input name="mode" type="hidden" value="3">
+                </div>
+                <input type="submit" value="Review" class="btn btn-primary" id="feedbackSubmit">
+            </form>
+            <div id="phpresult"></div>
+        </div>
+    </div>
+</div>
+
+<!--footer-->
+<div class="footpage"></div>
+<!--footer over-->
+</body>
+</html>

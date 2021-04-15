@@ -25,8 +25,9 @@
         <div id="contact">
             <h4>Give us a feedback or talk about your concerns.</h4>
             <form id="contact-form" method="post">
-                <label class="required">All fields required with *</label>
-                <div class="mb-3">
+                <a id="review" href="review.html">Already submitted a feedback?</a>
+                <br>
+                <div class="mb-3 clear">
                     <label for="name" class="form-label">Name</label>
                     <sup>*</sup>
                     <input type="text" class="form-control" id="name" name="name" required="required">
@@ -43,8 +44,10 @@
                 <div class="mb-3 form-check">
                     <input type="checkbox" name="reply" class="form-check-input" id="reply">
                     <label class="form-check-label" for="reply">I want to get reply.</label>
+                    <label class="required">All fields required with *</label>
                 </div>
-                <h6 id="phpresult"></h6>
+
+                <div id="phpresult"></div>
                 <input type="submit" class="btn btn-primary" id="feedbackSubmit">
             </form>
         </div>
