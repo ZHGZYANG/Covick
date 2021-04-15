@@ -1,0 +1,48 @@
+body{
+    background: url("againstcovid_login.png") no-repeat;
+    background-size: 100%;
+    background-attachment:fixed;
+}
+.mainbody{
+    height: 100%;
+}
+
+
+/*.container{*/
+/*    height: 100%;*/
+/*    align-content: center;*/
+/*}*/
+
+.card{
+    height: 50%;
+    margin-top: 15%;
+    margin-left: 42%;
+    width: 50%;
+    background-color: rgba(127, 125, 125, 0.5);
+}
+
+
+.card-header h3{
+    color: white;
+}
+
+.input-group-prepend span{
+    background-color: black;
+    color: white;
+}
+
+
+.login_btn{
+    color: white;
+    background-color: black;
+    width: 40%;
+    margin-left:30%;
+}
+
+.login_btn:hover{
+    color:black;
+    background-color: white;
+}
+#phpresult{
+    color: red;
+}

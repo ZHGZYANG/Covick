@@ -1,0 +1,157 @@
+html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+    background: url("covid.jpg");
+    background-size: auto;
+    background-attachment:fixed;
+}
+
+#navbar {
+    flex: 0 0 auto;
+    z-index: 1;
+    /*margin: 0;*/
+    top: 0;
+    left: 0;
+    width: 100%;
+    position: fixed;
+    background-color: black;
+    overflow: hidden;
+}
+
+.header a{
+    text-decoration: none;
+}
+
+.navbaritems {
+    margin: 1% 0 0.8% 1.6%;
+    float: left;
+    color: white;
+    display: block;
+    padding: 1% 0.8% 0.8% 0.8%;
+    font-family: Arial, serif;
+    font-size: 100%;
+}
+
+.navbaritems:hover {
+    color: gold;
+}
+
+#indexpage {
+    margin-left: 10%;
+    margin-right: 18%;
+}
+
+#icon {
+    margin: 1.8%;
+    width: 30px;
+    height: 30px;
+    display: none;
+    float: right;
+    border: 0;
+    border-radius: 2%;
+}
+
+.navbarright {
+    float: right;
+    margin-right: 10%;
+}
+.navbaruser{
+    margin-left: 10%;
+}
+
+@media screen and (max-width: 800px) {
+    .navbaritems:not(:first-child) {
+        display: none;
+    }
+
+    #icon {
+        float: right;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .header.responsive {
+        position: relative;
+    }
+
+    .header.responsive #icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .header.responsive .navbaritems {
+        float: none;
+        width: 85%;
+        margin-left: 10%;
+        display: block;
+        text-align: left;
+    }
+}
+
+.clear:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.mainbody {
+    flex: 1 0 auto;
+    margin-top: 6%;
+}
+
+/* footer */
+* .footer {
+    /*margin-top: 20px;*/
+    background: #222020;
+    width: 100%;
+    height: 220px;
+    text-align: center;
+    color: white;
+    position: absolute;
+}
+
+.footer a {
+    color: #f0f1f1;
+    text-decoration: none;
+    padding: 0 10px;
+    vertical-align: middle;
+}
+
+.footer p {
+    height: 15px;
+    color: #888888;
+    margin-top: 30px;
+    vertical-align: middle;
+}
+
+.footer .footer-top {
+    margin-top: 50px;
+    display: -webkit-flex;
+    display: flex;
+    width: 100%;
+    height: 100px;
+    vertical-align: middle;
+}
+
+.contact .info {
+    float: left;
+    display: inline-block
+}
+
+.contact {
+    width: 29%;
+    text-align: right;
+}
+
+.info {
+    padding-top: 5px;
+    padding-left: 5px;
+    width: 71%;
+}

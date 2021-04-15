@@ -1,0 +1,49 @@
+body{
+    background: url("againstcovid.png");
+    background-size: 100%;
+    background-attachment:fixed;
+}
+h1 {
+    text-align: center;
+    margin: 5%;
+}
+
+h4 {
+    text-align: center;
+}
+
+.required, sup {
+    color: red;
+}
+
+#contactwrapper {
+    padding-top: 2%;
+    background-color: rgba(10,44,116,0.8);
+    /*height: 100%;*/
+    color: white;
+}
+
+#contact {
+    width: 50%;
+    margin: auto;
+}
+
+label {
+    font-weight: bold;
+}
+
+#feedbackSubmit {
+    width: 50%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 25%;
+}
+#phpresult{
+    color: red;
+    text-align: center;
+}
+
+#content{
+    text-align: center;
+    margin-bottom: 5%;
+}
