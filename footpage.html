@@ -1,18 +1,17 @@
 <footer>
     <div class="footer">
         <div class="footer-top">
-
             <div class="contact">
                 <h4>Contact</h4>
             </div>
             <div class="info">
-                <h6>If you need help, please contact:</h6>
-                <a href="mailto:1@missouri.edu">1</a>
+                <h6>If you need help, please contact us by</h6>
+                <a href="about.html">Online feedback</a>
             </div>
         </div>
         <p id="copyright"></p>
         <script>
-            document.getElementById("copyright").innerHTML = "All rights reserved. ©Copyright "+new Date().getFullYear()+" COVID Tail";
+            document.getElementById("copyright").innerHTML = "All rights reserved. ©Copyright "+new Date().getFullYear()+" COVICK";
         </script>
     </div>
 </footer>
@@ -37,7 +36,7 @@
             }
 
             if (usertoken) { //has been log in
-                navbar.innerHTML += "<a class=\"navbaritems navbaruser\" href=\"admin.php\">Welcome " + username + " !</a>";
+                navbar.innerHTML += "<a class=\"navbaritems navbaruser\" id=\"adminpage\" href=\"admin.php\">Welcome " + username + " !</a>";
                 navbar.innerHTML += "<a class=\"navbaritems\" href=\"javascript:logout()\">Logout</a>";
             } else {
                 navbar.innerHTML += "<a class=\"navbaritems navbarright\" href=\"login.html\">Login</a>";

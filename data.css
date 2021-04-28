@@ -1,0 +1,20 @@
+#datapage{
+    color: gold;
+}
+.content{
+    margin-top: 25px;
+    text-align: center;
+}
+.table{
+    color: white;
+    background-color: rgba(136,136,136,0.7);
+}
+sup{
+    color: white;
+    /*width: 100%;*/
+    /*background-color: rgba(136,136,136,0.7);*/
+}
+#note{
+    padding: 0 15%;
+    text-align: right;
+}

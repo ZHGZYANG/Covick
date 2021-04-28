@@ -1,22 +1,38 @@
 <!DOCTYPE html>
+<!--
+Reference:
+     jquery.vmap.js is used and modified to show map for covid-19
+-->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>COVID Tail - Map</title>
+    <title>COVICK - Map</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
           integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
 
+    <script type="text/javascript" src="map.js"></script>
+    <script type="text/javascript" src="jquery.vmap.js"></script>
+    <script type="text/javascript" src="jquery.vmap.usa.js" charset="utf-8"></script>
+    <link href="jqvmap.css" media="screen" rel="stylesheet" type="text/css">
+
     <script src="base.js"></script>
     <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="map.css">
 </head>
 <body>
 <div class="headpage"></div>
 
 <div class="mainbody">
-<!--    https://www.arcgis.com/apps/opsdashboard/index.html#/409af567637846e3b5d4182fcd779bea-->
-
+    <div id="title">
+        <h2>Cases by states</h2>
+    </div>
+    <div id="vmap"></div>
+    <div id="summary">
+        *The data is from covidtracking.com
+        <br>
+    </div>
 </div>
 
 <!--footer-->
